@@ -28,6 +28,27 @@ class BooksApp extends React.Component {
     BooksAPI.getAll().then((resp) => this.setState({books: resp}));
   }
 
+  changeBookShelf =(book, shelf) => {
+    BooksAPI
+      .update(book, shelf)
+      .then(response => {
+        let newList = this
+          .state
+          .books.
+          slice(0);
+
+        const books = newList.filter(listBook => listBook.id === book.id);
+        if (books.length) {
+
+          books[0].shelf = shelf;
+        } else {
+          newList.push(book);
+          // newList = BookUtils.sortAllBooks(newList);
+        }
+        this.setState({books: newList});
+      })
+  };
+
   render() {
     return (
       <div className="app">
@@ -40,7 +61,7 @@ class BooksApp extends React.Component {
 
             <Header />
 
-            <Shelves allBooks={this.state.books} />
+            <Shelves allBooks={this.state.books} changeShelf={this.changeBookShelf}/>
 
 
             <SearchButton showSearchPage={this.updateSearch}/>
