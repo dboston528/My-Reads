@@ -41,11 +41,10 @@ class BooksApp extends React.Component {
 
         const books = newList.filter(listBook => listBook.id === book.id);
         if (books.length) {
-
           books[0].shelf = shelf;
         } else {
           newList.push(book);
-          // newList = BookUtils.sortAllBooks(newList);
+          book.shelf = shelf;
         }
         this.setState({books: newList});
       })

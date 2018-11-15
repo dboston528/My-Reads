@@ -70,8 +70,9 @@ class Search extends React.Component {
               <li key={searchedBook.id}>
               <Book
                 book={searchedBook}
-                changeShelf={this.props.changeShelf}
                 assignedShelf={shelf}
+                changeShelf={this.props.changeShelf}
+
               />
 
               </li>
