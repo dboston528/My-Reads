@@ -11,4 +11,4 @@ To open the project, clone or download the file to your local machine and in you
 
 then
 
-###`npm start`
+### npm start
