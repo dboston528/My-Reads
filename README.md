@@ -8,7 +8,7 @@ This project was created using [Create React App](https://github.com/facebook/cr
 
 To open the project, clone or download the file to your local machine and in your Command Prompt run:
 
-## npm install
+### npm install
 
 then
 
