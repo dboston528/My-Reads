@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { Nav, NavItem, Navbar } from 'react-bootstrap';
 const Header = () => {
   return (
-    <div className="list-books-title">
-      <h1>My Reads</h1>
-      <h1>About</h1>
-    </div>
+    <Navbar bg="dark" expand="lg">
+      <Nav.Link href="deandreboston.com">My Site</Nav.Link>
+      <NavItem>About</NavItem>
+    </Navbar>
   );
 };
 
