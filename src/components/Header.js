@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <Navbar className="navbar" expand="lg">
       <Navbar.Brand>MyReads</Navbar.Brand>
-      <Nav.Link href="/">My Site</Nav.Link>
+
+      <Nav.Link id="mysite" href="/" className="navl">
+        My Site
+      </Nav.Link>
       <Nav.Link href="/about">About</Nav.Link>
     </Navbar>
   );

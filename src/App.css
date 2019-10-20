@@ -179,3 +179,12 @@ body,
 .navbar {
   background: green;
 }
+
+#mysite {
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
