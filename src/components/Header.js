@@ -4,11 +4,13 @@ import '../App.css';
 
 const Header = () => {
   return (
-    <Navbar className="navbar" expand="lg">
-      <Navbar.Brand>MyReads</Navbar.Brand>
+    <Navbar bg="dark" className="navbar" expand="lg">
+      <Navbar.Brand href="/" className="logo-text">
+        MyReads
+      </Navbar.Brand>
 
       <Nav.Link id="mysite" href="/" className="navl">
-        My Site
+        Portfolio
       </Nav.Link>
       <Nav.Link href="/about">About</Nav.Link>
     </Navbar>

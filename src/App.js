@@ -64,9 +64,7 @@ class BooksApp extends React.Component {
           exact
           path="/"
           render={() => (
-            <div className="list-books">
-              <Header />
-
+            <div className="list-books container">
               <Shelves
                 allBooks={this.state.books}
                 changeShelf={this.changeBookShelf}
