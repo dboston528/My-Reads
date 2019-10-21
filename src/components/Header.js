@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavItem, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import '../App.css';
 
 const Header = () => {
