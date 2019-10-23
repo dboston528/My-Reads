@@ -196,3 +196,9 @@ nav a:hover {
 .logo-text {
   color: white;
 }
+
+.about {
+  font-size: 100px;
+  font-weight: 100;
+  margin-top: 15px;
+}
